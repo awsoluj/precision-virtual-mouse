@@ -1,58 +1,53 @@
-Precision Virtual Mouse 🖱️
+# Precision Virtual Mouse 🖱️
 
-This project is a Python application that allows you to control your mouse using hand gestures captured through your computer's webcam. It leverages MediaPipe and OpenCV for hand tracking and PyAutoGUI to perform system-level mouse actions.
+A Python-based system utility controlled entirely by hand gestures using MediaPipe and OpenCV. It allows you to control your OS mouse cursor, click, and drag without touching your hardware.
 
-Note: This project has been developed and tested specifically on Python 3.10.11. Using other versions may lead to compatibility issues with certain libraries (especially MediaPipe).
+## ⚠️ Important: Python Version
+**Required Python Version:** Python 3.10.x  
+This project is optimized for **Python 3.10**. Newer versions (like 3.12 or 3.13) will cause errors with MediaPipe.
 
-Features
+👉 **[Download Python 3.10.11 Here (Direct Installer)](https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe)**
 
-Precision Cursor Control: Manage the mouse pointer via the movement of your index finger.
+> **Installation Note:** When installing Python, make sure to check the box **"Add Python to PATH"** at the bottom of the installer window.
 
-Clicking: Perform a left-click by quickly pinching your thumb and index finger together and releasing.
+## 🖱️ Controls
 
-Dragging: Hold your fingers pinched to drag files or windows across the screen.
+* **Move Cursor:** Point your Index Finger and move it across the camera frame.
 
-Smooth Movement: Includes a smoothing algorithm to prevent jitter and shaky cursor movements.
+* **Left Click:** Quick Pinch (bring index finger and thumb together and release within 0.35s).
 
-Responsive Scaling: Automatically adapts to different screen resolutions.
+* **Drag & Drop:** Hold Pinch (bring index finger and thumb together and keep them closed to drag windows or files).
 
-Installation
+* **Quit:** Press **'q'**.
 
-Clone this repository:
+## 🚀 How to Run (Easy Way)
 
-git clone [https://github.com/yourusername/precision-virtual-mouse.git](https://github.com/yourusername/precision-virtual-mouse.git)
-cd precision-virtual-mouse
+Clone or download this repository.
 
+Double-click on **`start.bat`**.
+(It will automatically install dependencies and launch the application.)
 
-Ensure you are using Python 3.10.11. You can check your version with:
+## 🛠️ How to Run (Manual Way)
 
-python --version
+If you prefer running it manually via terminal:
 
+1. Create a virtual environment (Python 3.10):
+    ```bash
+    python -m venv venv
+    ```
 
-Install the required libraries:
+2. Activate the environment:
+    ```bash
+    Windows: venv\Scripts\activate
+    Mac/Linux: source venv/bin/activate
+    ```
 
-pip install -r requirements.txt
+3. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-
-Usage
-
-To start the project, run the main.py file or double-click the start.bat file if you are on Windows:
-
-python main.py
-
-
-Control Gestures
-
-Move Mouse: Show your index finger to the camera and move it.
-
-Left Click: Pinch your thumb and index finger together and release in less than 0.35 seconds.
-
-Dragging: Pinch your fingers together and hold for more than 0.35 seconds. Releasing the pinch ends the drag.
-
-Exit: Press the q key on your keyboard while the application window is focused.
-
-Requirements
-
-Python 3.10
-
-Libraries listed in requirements.txt
+4. Run the application:
+    ```bash
+    python main.py
+    ```
