@@ -25,7 +25,7 @@ if not exist "venv" (
 )
 
 echo.
-echo Launching Space Defense Game...
+echo Launching Precision Virtual Mouse...
 echo Press 'q' in the game window to quit.
 echo.
 
